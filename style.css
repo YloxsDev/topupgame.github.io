@@ -1,0 +1,505 @@
+:root
+{
+    --blue : #343434
+    --dark-blue : #4287f5
+    --green : #4287f5
+    --white : #fff
+}
+
+*
+{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style-type: none;
+    box-sizing: border-box;
+    font-family: 'Tahoma';
+}
+
+body
+{
+    background-color: #343434;
+    color: white;
+}
+
+header
+{
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    padding: 2%;
+    font-weight: bold;
+    font-size: 15pt;
+    justify-content: center;
+    text-align: center;
+    background-color: #42a5f5;
+    box-shadow: 0px 3px 12px -7px rgba(0, 0, 0, 0.5);
+    border-radius: 1% 1% 15% 15%;
+}
+
+.title
+{
+    color: white;
+
+}
+
+.input-search
+{
+    width: 30%;
+    border: none;
+    border-radius: 10px;
+    padding: 5px;
+    box-shadow: 0px 3px 12px -7px rgba(0, 0, 0, 0.5);
+}
+
+.input-submit
+{
+    margin-left: -6px;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: #1495ff;
+    color: white;
+    width: 6%;
+    font-weight: bold;
+    box-shadow: 0px 3px 12px -7px rgba(0, 0, 0, 0.5);
+}
+
+nav
+{
+    margin-top: 15px;
+}
+
+nav ul
+{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+nav ul li a
+{
+    color: black
+    ;
+}
+
+nav ul li a:hover
+{
+    border-bottom: 3px solid white;
+}
+
+.slider
+{
+    margin-top: 10%;
+    display: block;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    width: 50%;
+}
+
+.slider h4
+{
+    margin-top: 10%;
+}
+
+.slides
+{
+    display: flex;
+    width: 50rem;
+    overflow: hidden;
+}
+
+.slides img 
+{
+    border-radius: 10px;
+}
+
+
+.slide
+{
+    width: 50rem;
+    transition: .5s;
+}
+
+.choose_1:checked ~ .slides > .s1
+{
+    margin-left: -0rem;
+}
+
+.choose_2:checked ~ .slides > .s1
+{
+    margin-left: -50rem;
+}
+
+.overlay 
+{
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.overlay:target 
+{
+    visibility: visible;
+    opacity: 1;
+}
+
+.popup 
+{
+    margin: 70px auto;
+    padding: 20px;
+    background: grey;
+    border-radius: 5px;
+    width: 30%;
+    position: relative;
+    transition: all 5s ease-in-out;
+}
+  
+.popup h2 {
+    margin-top: 0;
+    color: white;
+    font-family: Tahoma, Arial, sans-serif;
+}
+
+.popup .close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    transition: all 200ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+}
+
+.popup .close:hover 
+{
+    color: #42a5f5;
+}
+
+.content 
+{
+    max-height: 30%;
+    width: 50%;
+}
+
+.title-p1
+{
+    margin-left: 60px;
+    margin-top: 5%;
+    
+}
+
+.populer
+{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.populer img
+{ 
+    border-radius: 15px;
+   
+}
+
+
+.harga
+{
+    color: white;
+}
+
+.link a
+{
+    color: white;
+}
+
+.link a:hover
+{
+    color: #42a5f5;
+}
+
+.pesan
+{
+    margin-left: -6px;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: mediumspringgreen;
+    color: gray;
+    width: 6%;
+    font-weight: bold;
+}
+
+.pesan:hover
+{
+ 
+    background-color: white
+
+}
+
+.pesan img
+{
+    width: 30px;
+   
+}
+
+.overlay 
+{
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.overlay:target 
+{
+    visibility: visible;
+    opacity: 1;
+}
+
+.popup 
+{
+    margin: 70px auto;
+    padding: 20px;
+    background: grey;
+    border-radius: 5px;
+    width: 30%;
+    position: relative;
+    transition: all 5s ease-in-out;
+}
+  
+.popup h2 {
+    margin-top: 0;
+    color: white;
+    font-family: Tahoma, Arial, sans-serif;
+}
+
+.popup .close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    transition: all 200ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+}
+
+.popup .close:hover 
+{
+    color: #42a5f5;
+}
+
+.content 
+{
+    max-height: 30%;
+    width: 50%;
+}
+
+.title-p2    
+{
+    margin-top: 5%;
+    margin-left: 60px;  
+}
+
+.streaming
+{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.streaming img
+{ 
+    border-radius: 10px;
+}
+
+
+.harga
+{
+    color: white;
+}
+
+.link a
+{
+    color: white;
+}
+
+.link a:hover
+{
+    color: #42a5f5;
+}
+
+.pesan
+{
+    margin-left: -6px;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: mediumspringgreen;
+    color: gray;
+    width: 6%;
+    font-weight: bold;
+}
+
+.pesan:hover
+{
+ 
+    background-color: white
+
+}
+
+.pesan img
+{
+    width: 30px;
+   
+}
+
+.tentang
+{
+    display: grid;
+    justify-content: center;
+    margin-top: 10%;
+    font-size: 15pt;
+}
+ 
+.card
+{
+    background-color: #42a5f5;
+    padding: 5%;
+    border-radius: 10px;
+    box-shadow: 20px 20px black;
+}
+ 
+.card h1
+{
+    text-align: center;
+}
+ 
+html
+{
+    scroll-behavior: smooth;
+}
+ 
+ 
+footer
+{
+    display: grid;
+    justify-content: center;
+    background-color: #42a5f5;
+    margin-top: 10%;
+    padding: 2%;
+    border-radius: 3%;
+}
+ 
+.sosmed img 
+{
+    width: 50px;
+}
+
+.pembayaran img 
+{
+    width: 480px;
+}
+ 
+
+#copyright
+{
+    text-align: center;
+    padding: 10px;
+}
+
+@media screen  and (max-width: 600px) {
+
+    nav ul li a
+    {
+        font-size: 11pt;
+
+    }
+
+    .input-submit
+    {
+        width: 20%;
+    }
+
+    .slider
+    {
+        display: none;
+    }   
+
+    .title-p1
+    {
+        padding-top: 6rem;
+        margin-left: 20px;
+    }
+
+    .title-p2
+    {
+        padding-top: 6rem;
+        margin-left: 20px;
+    }
+
+    .populer
+    {
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        font-size: 10pt;
+    }
+
+    .streaming
+    {
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        font-size: 10pt;
+    }
+
+
+    .link img
+    {
+        width: 80%;
+    }
+
+    .tentang
+    {
+        width: 90%;
+        padding-left: 2rem;
+        font-size: 12pt;
+    }
+
+    .sosmed
+    {
+        font-size: 6pt;
+    }
+
+    .sosmed img
+    {
+        width: 7%;
+    }
+
+    .pembayaran
+    {
+        font-size: 6pt;
+    }
+
+    .pembayaran img
+    {
+        width: 50%;
+    }
+}
